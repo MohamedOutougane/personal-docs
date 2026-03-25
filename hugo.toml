@@ -1,0 +1,38 @@
+baseURL = "https://docs.mohamedoutougane.com/"
+title = "RavenBreach — Docs"
+theme = "hugo-book"
+defaultContentLanguage = "fr"
+
+buildDrafts = false
+buildFuture = false
+enableEmoji = true
+enableRobotsTXT = true
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+  [markup.highlight]
+    style = "monokai"
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  # Force dark theme
+  BookTheme = "dark"
+
+  # Enable right ToC sidebar
+  BookToC = true
+
+  # Enable Lunr.js full-text search
+  BookSearch = true
+
+  # Collapse sidebar sections by default
+  BookCollapseSection = true
+
+  BookComments = false
+
+  # Set to your repo to enable "Edit this page" links
+  # BookRepo = "https://github.com/MohamedOutougane/personal-docs"
+  # BookEditPath = "edit/main/content"
