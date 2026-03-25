@@ -5,6 +5,7 @@ description: "Comment utiliser une mauvaise configuration Telnet."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, linux, tier-0]
 slug: meow
+image: ./featured.png
 ---
 
 # Introduction

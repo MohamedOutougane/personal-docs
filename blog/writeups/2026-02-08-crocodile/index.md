@@ -5,6 +5,7 @@ description: "Quand des identifiants fuitent via un FTP mal configuré."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, web, linux, tier-1]
 slug: crocodile
+image: ./featured.jpg
 ---
 
 # Introduction

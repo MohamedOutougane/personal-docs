@@ -5,6 +5,7 @@ description: "SQL Injection sur un formulaire de login."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, web, linux, tier-1]
 slug: appointment
+image: ./featured.png
 ---
 
 # Introduction

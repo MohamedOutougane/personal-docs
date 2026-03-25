@@ -5,6 +5,7 @@ description: "Touchons un peu au web."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, web, linux, vip, tier-0]
 slug: preignition
+image: ./featured.png
 ---
 
 # Introduction

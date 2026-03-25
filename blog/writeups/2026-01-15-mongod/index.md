@@ -5,6 +5,7 @@ description: "Découverte d'un service de base de données NoSQL."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, linux, database, vip, tier-0]
 slug: mongod
+image: ./featured.png
 ---
 
 # Introduction

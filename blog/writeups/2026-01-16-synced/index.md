@@ -5,6 +5,7 @@ description: "Découverte d'un service de backup."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, linux, vip, tier-0]
 slug: synced
+image: ./featured.png
 ---
 
 # Introduction

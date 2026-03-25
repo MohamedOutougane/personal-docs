@@ -56,7 +56,7 @@ const config: Config = {
         blogDescription: 'Mes writeups HackTheBox — Starting Point et CTFs',
         postsPerPage: 10,
         blogSidebarTitle: 'Writeups récents',
-        blogSidebarCount: 15,
+        blogSidebarCount: 'ALL',
         showReadingTime: true,
         feedOptions: {
           type: ['rss', 'atom'],
@@ -109,14 +109,22 @@ const config: Config = {
       },
       items: [
         {
-          to: '/writeups',
+          type: 'dropdown',
           label: 'Writeups',
           position: 'left',
+          items: [
+            {to: '/writeups', label: 'Tous les writeups'},
+            {to: '/writeups/tags', label: 'Tags'},
+          ],
         },
         {
-          to: '/articles',
+          type: 'dropdown',
           label: 'Articles',
           position: 'left',
+          items: [
+            {to: '/articles', label: 'Tous les articles'},
+            {to: '/articles/tags', label: 'Tags'},
+          ],
         },
         {
           type: 'docSidebar',
@@ -132,8 +140,21 @@ const config: Config = {
         },
         {
           href: 'https://github.com/MohamedOutougane',
-          label: 'GitHub',
           position: 'right',
+          className: 'navbar-icon-link navbar-github-link',
+          'aria-label': 'GitHub',
+        },
+        {
+          href: 'https://www.linkedin.com/in/mohamed-outougane-834175224/',
+          position: 'right',
+          className: 'navbar-icon-link navbar-linkedin-link',
+          'aria-label': 'LinkedIn',
+        },
+        {
+          href: 'https://www.youtube.com/@Raven_Breach',
+          position: 'right',
+          className: 'navbar-icon-link navbar-youtube-link',
+          'aria-label': 'YouTube',
         },
       ],
     },

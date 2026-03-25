@@ -5,6 +5,7 @@ description: "Exploitation d'une SSTI sur Handlebars pour sortir d'une sandbox N
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, web, linux, vip, tier-1]
 slug: bike
+image: ./featured.png
 ---
 
 # Introduction

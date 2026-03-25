@@ -5,6 +5,7 @@ description: "Exploitation d'un FTP anonyme et port forwarding SSH pour accéder
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, linux, database, vip, tier-1]
 slug: funnel
+image: ./featured.jpg
 ---
 
 # Introduction

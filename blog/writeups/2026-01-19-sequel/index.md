@@ -5,6 +5,7 @@ description: "Comment discuter avec une base de données?"
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, database, tier-1]
 slug: sequel
+image: ./featured.png
 ---
 
 # Introduction

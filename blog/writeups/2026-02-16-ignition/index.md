@@ -5,6 +5,7 @@ description: "Enumération d'un panneau admin Magento et connexion avec des iden
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, web, linux, vip, tier-1]
 slug: ignition
+image: ./featured.gif
 ---
 
 # Introduction

@@ -5,6 +5,7 @@ description: "Exploitation d'un S3 bucket mal configuré pour obtenir un shell."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, web, linux, tier-1]
 slug: three
+image: ./featured.jpg
 ---
 
 # Introduction

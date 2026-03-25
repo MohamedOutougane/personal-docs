@@ -5,6 +5,7 @@ description: "Exploitation d'une LFI pour voler des credentials NetNTLMv2."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, web, windows, tier-1]
 slug: responder
+image: ./featured.jpg
 ---
 
 # Introduction

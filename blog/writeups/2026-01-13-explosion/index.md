@@ -5,6 +5,7 @@ description: "Découverte du protocole RDP et de l'interface graphique."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, windows, vip, tier-0]
 slug: explosion
+image: ./featured.png
 ---
 
 # Introduction

@@ -5,6 +5,7 @@ description: "Une connexion anonyme sur FTP?"
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, linux, tier-0]
 slug: fawn
+image: ./featured.png
 ---
 
 # Introduction

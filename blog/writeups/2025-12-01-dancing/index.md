@@ -5,6 +5,7 @@ description: "Découverte du protocole SMB et des partages réseaux."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, windows, tier-0]
 slug: dancing
+image: ./featured.gif
 ---
 
 # Introduction

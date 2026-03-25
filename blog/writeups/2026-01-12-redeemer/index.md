@@ -5,6 +5,7 @@ description: "Découverte du service de base de données Redis."
 authors: [ravenbreach]
 tags: [writeups, hackthebox, starting-point, misconfiguration, linux, database, tier-0]
 slug: redeemer
+image: ./featured.png
 ---
 
 # Introduction
