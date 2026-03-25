@@ -1,84 +1,41 @@
-# personal-docs
+# Website
 
-Documentation technique de pentest — propulsée par [Hugo](https://gohugo.io/) avec le thème [Hugo Book](https://github.com/alex-shpak/hugo-book).
-
-Hébergée sur [docs.mohamedoutougane.com](https://docs.mohamedoutougane.com)
-
-## Prérequis
-
-- [Git](https://git-scm.com/)
-- [Hugo Extended](https://gohugo.io/installation/) — version **extended** obligatoire (SCSS)
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
 
-### Clone avec le thème
+```bash
+yarn
+```
+
+## Local Development
 
 ```bash
-git clone --recurse-submodules https://github.com/MohamedOutougane/personal-docs.git
-cd personal-docs
+yarn start
 ```
 
-Si déjà cloné sans le thème :
-```bash
-git submodule update --init --recursive
-```
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Lancer en local
+## Build
 
 ```bash
-hugo server -D
-# → http://localhost:1313
+yarn build
 ```
 
-## Structure
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-```
-.
-├── assets/
-│   ├── _variables.scss   # Override variables Hugo Book (couleurs, tailles)
-│   └── _custom.scss      # Styles custom (dark theme Congo, Ubuntu font)
-├── content/
-│   ├── methodologie/     # Méthodologie pentest (phases & domaines)
-│   └── cheatsheet/       # Commandes, outils, ressources
-└── themes/hugo-book/     # Thème (git submodule)
-```
+## Deployment
 
-## Ajouter une page
-
-Créer un fichier `.md` dans le dossier approprié :
+Using SSH:
 
 ```bash
-# Exemple : nouvelle page dans exploitation/web
-hugo new content/methodologie/exploitation/web/nouvelle-technique.md
+USE_SSH=true yarn deploy
 ```
 
-Front matter minimal :
-```yaml
----
-title: "Titre de la page"
-weight: 60   # ordre dans la sidebar
----
-```
-
-## Déploiement
-
-Push sur `main` → GitHub Actions build et deploy automatiquement sur GitHub Pages.
-
-## Intégration dans ravenbreach-blog (submodule)
-
-Ce repo est ajouté comme submodule dans `ravenbreach-blog` :
+Not using SSH:
 
 ```bash
-# Dans ravenbreach-blog/
-git submodule add https://github.com/MohamedOutougane/personal-docs.git personal-docs
-git commit -m "feat: add personal-docs as submodule"
+GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-## Configurer le sous-domaine
-
-Dans les paramètres DNS de ton domaine, ajoute :
-```
-CNAME  docs  mohamedoutougane.github.io
-```
-
-Puis dans les Settings GitHub du repo `personal-docs` → Pages → Custom domain : `docs.mohamedoutougane.com`
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

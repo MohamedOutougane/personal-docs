@@ -1,0 +1,8 @@
+{
+  "label": "Méthodologie",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Framework structuré pour aborder les machines CTF et les engagements de pentest."
+  }
+}

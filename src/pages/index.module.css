@@ -1,0 +1,160 @@
+/* ─── Hero ─────────────────────────────────────────────────── */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem 4rem;
+  text-align: center;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(110, 87, 255, 0.15) 0%,
+    transparent 70%
+  );
+  border-bottom: 1px solid rgba(110, 87, 255, 0.12);
+  min-height: 60vh;
+}
+
+[data-theme='dark'] .hero {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(169, 154, 255, 0.12) 0%,
+    transparent 65%
+  );
+  border-bottom-color: rgba(169, 154, 255, 0.1);
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 720px;
+  width: 100%;
+}
+
+.heroLogo {
+  height: 96px;
+  width: auto;
+  filter: drop-shadow(0 0 20px rgba(110, 87, 255, 0.4));
+}
+
+[data-theme='dark'] .heroLogo {
+  content: url('/img/raven_actual_inverse.png');
+  filter: drop-shadow(0 0 24px rgba(169, 154, 255, 0.5));
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+  background: linear-gradient(135deg, #6e57ff 0%, #a99aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme='dark'] .heroTitle {
+  background: linear-gradient(135deg, #a99aff 0%, #e8e5ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroTagline {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--ifm-color-emphasis-600);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 540px;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+/* ─── Section cards ────────────────────────────────────────── */
+.sections {
+  padding: 4rem 0;
+}
+
+.sectionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.sectionCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color, #fff));
+}
+
+.sectionCard:hover {
+  text-decoration: none;
+  color: inherit;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 20px rgba(110, 87, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+[data-theme='dark'] .sectionCard {
+  background-color: #1a1a24;
+  border-color: rgba(169, 154, 255, 0.15);
+}
+
+[data-theme='dark'] .sectionCard:hover {
+  border-color: rgba(169, 154, 255, 0.5);
+  box-shadow: 0 4px 24px rgba(169, 154, 255, 0.15);
+}
+
+.sectionEmoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.sectionCardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--ifm-heading-color);
+}
+
+.sectionCardDesc {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.6;
+}
+
+/* ─── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+    min-height: 50vh;
+  }
+
+  .heroLogo {
+    height: 72px;
+  }
+
+  .heroButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionGrid {
+    grid-template-columns: 1fr;
+  }
+}

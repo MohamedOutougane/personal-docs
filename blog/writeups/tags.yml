@@ -1,0 +1,47 @@
+writeups:
+  label: Writeups
+  permalink: /writeups
+
+hackthebox:
+  label: Hack The Box
+  permalink: /hackthebox
+
+starting-point:
+  label: Starting Point
+  permalink: /starting-point
+
+tier-0:
+  label: Tier 0
+  permalink: /tier-0
+
+tier-1:
+  label: Tier 1
+  permalink: /tier-1
+
+misconfiguration:
+  label: Misconfiguration
+  permalink: /misconfiguration
+
+linux:
+  label: Linux
+  permalink: /linux
+
+windows:
+  label: Windows
+  permalink: /windows
+
+web:
+  label: Web
+  permalink: /web
+
+network:
+  label: Network
+  permalink: /network
+
+database:
+  label: Database
+  permalink: /database
+
+vip:
+  label: VIP
+  permalink: /vip

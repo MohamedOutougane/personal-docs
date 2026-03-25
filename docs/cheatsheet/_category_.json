@@ -1,0 +1,8 @@
+{
+  "label": "Cheatsheet",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Commandes essentielles, one-liners et références rapides pour les outils du quotidien en pentest."
+  }
+}

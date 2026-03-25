@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/**
+ * Congo-inspired color palette (Blowfish theme — violet spectrum)
+ * Infima CSS variables: https://infima.dev/docs/getting-started/introduction
+ */
+
+/* ─── Light mode ──────────────────────────────────────────── */
+:root {
+  --ifm-font-family-base: 'Ubuntu', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Ubuntu', system-ui, -apple-system, sans-serif;
+
+  --ifm-color-primary: #6e57ff;
+  --ifm-color-primary-dark: #5b40ff;
+  --ifm-color-primary-darker: #5133ff;
+  --ifm-color-primary-darkest: #3410ff;
+  --ifm-color-primary-light: #8170ff;
+  --ifm-color-primary-lighter: #8e7fff;
+  --ifm-color-primary-lightest: #afa2ff;
+
+  --ifm-code-font-size: 90%;
+  --ifm-navbar-height: 3.5rem;
+  --docusaurus-highlighted-code-line-bg: rgba(110, 87, 255, 0.12);
+}
+
+/* ─── Dark mode ───────────────────────────────────────────── */
+[data-theme='dark'] {
+  --ifm-color-primary: #a99aff;
+  --ifm-color-primary-dark: #8e7fff;
+  --ifm-color-primary-darker: #8170ff;
+  --ifm-color-primary-darkest: #6e57ff;
+  --ifm-color-primary-light: #c4bbff;
+  --ifm-color-primary-lighter: #d0c9ff;
+  --ifm-color-primary-lightest: #e8e5ff;
+
+  --ifm-background-color: #0f0f13;
+  --ifm-background-surface-color: #1a1a24;
+  --ifm-navbar-background-color: #0f0f13;
+  --ifm-footer-background-color: #0a0a0d;
+  --docusaurus-highlighted-code-line-bg: rgba(169, 154, 255, 0.15);
+}
+
+/* ─── Global typography ───────────────────────────────────── */
+body,
+html {
+  font-family: 'Ubuntu', system-ui, -apple-system, sans-serif;
+}
+
+/* ─── Navbar logo ─────────────────────────────────────────── */
+.navbar__logo img {
+  height: 2rem;
+  width: auto;
+}
+
+/* ─── Dark mode surface overrides ────────────────────────── */
+[data-theme='dark'] .card {
+  background-color: var(--ifm-background-surface-color);
+  border: 1px solid rgba(169, 154, 255, 0.15);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-theme='dark'] .card:hover {
+  border-color: rgba(169, 154, 255, 0.4);
+  box-shadow: 0 4px 24px rgba(169, 154, 255, 0.1);
+}
+
+/* ─── Blog tag pills ──────────────────────────────────────── */
+[data-theme='dark'] .tag {
+  background-color: rgba(169, 154, 255, 0.12);
+  border-color: rgba(169, 154, 255, 0.3);
+}
