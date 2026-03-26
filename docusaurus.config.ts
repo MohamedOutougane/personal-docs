@@ -30,6 +30,22 @@ const config: Config = {
     locales: ['fr'],
   },
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['fr', 'en'],
+        indexDocs: true,
+        indexBlog: true,
+        blogRouteBasePath: ['/writeups', '/articles'],
+        docsRouteBasePath: '/docs',
+        searchResultContextMaxLength: 80,
+        searchBarShortcutHint: false,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -54,7 +70,7 @@ const config: Config = {
         path: './blog/writeups',
         blogTitle: 'Writeups',
         blogDescription: 'Mes writeups HackTheBox — Starting Point et CTFs',
-        postsPerPage: 10,
+        postsPerPage: 'ALL',
         blogSidebarTitle: 'Writeups récents',
         blogSidebarCount: 'ALL',
         showReadingTime: true,
@@ -77,7 +93,7 @@ const config: Config = {
         path: './blog/articles',
         blogTitle: 'Articles',
         blogDescription: 'Mes articles et tutoriels cybersécurité',
-        postsPerPage: 10,
+        postsPerPage: 'ALL',
         blogSidebarTitle: 'Articles récents',
         blogSidebarCount: 10,
         showReadingTime: true,
@@ -97,8 +113,9 @@ const config: Config = {
   themeConfig: {
     image: 'img/raven_actual.png',
     colorMode: {
-      defaultMode: 'dark',
-      respectPrefersColorScheme: true,
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'RavenBreach',
