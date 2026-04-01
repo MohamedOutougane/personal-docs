@@ -121,8 +121,8 @@ const config: Config = {
       title: 'RavenBreach',
       logo: {
         alt: 'RavenBreach Logo',
-        src: 'img/raven_actual.png',
-        srcDark: 'img/raven_actual_inverse.png',
+        src: 'img/raven_actual_inverse.png',
+        srcDark: 'img/raven_actual.png',
       },
       items: [
         {
