@@ -302,40 +302,4 @@ html {
 }
 
 /* ─── Barre de recherche par section ───────────────────────── */
-.rb-section-search {
-  padding: 1.5rem 0 0.25rem;
-}
-
-.rb-section-search__input {
-  display: block;
-  width: 100%;
-  padding: 0.65rem 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  background: var(--ifm-background-surface-color, #fff);
-  color: var(--ifm-font-color-base);
-  font-size: 0.95rem;
-  font-family: inherit;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.rb-section-search__input:focus {
-  outline: none;
-  border-color: var(--ifm-color-primary);
-  box-shadow: 0 0 0 3px rgba(110, 87, 255, 0.15);
-}
-
-[data-theme='dark'] .rb-section-search__input {
-  background: var(--ifm-background-surface-color);
-  border-color: rgba(169, 154, 255, 0.25);
-}
-
-[data-theme='dark'] .rb-section-search__input:focus {
-  box-shadow: 0 0 0 3px rgba(169, 154, 255, 0.15);
-}
-
-.rb-section-search__count {
-  margin: 0.5rem 0 0;
-  font-size: 0.85rem;
-  color: var(--ifm-color-emphasis-600);
-}
+/* (Inline section search styles removed - feature disabled) */
