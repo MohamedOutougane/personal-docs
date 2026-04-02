@@ -177,6 +177,6 @@ MariaDB [htb]> SELECT * FROM config;
 7 rows in set (0.012 sec)
 ```
 
-Et **boum** ! Le terminal nous affiche une ligne avec notre précieux flag : 7b4{…}da8
+Et **boum** ! Le terminal nous affiche une ligne avec notre précieux flag : 7b4\{…\}da8
 
 La machine est **pwned** !
