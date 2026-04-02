@@ -4,7 +4,8 @@
       "Bash(npm install:*)",
       "Bash(mkdir -p \"c:\\\\Users\\\\m.outougane\\\\Documents\\\\Projects\\\\Perso\\\\personal-docs\\\\src\\\\theme\\\\BlogPostItem\")",
       "Bash(mkdir -p \"c:\\\\Users\\\\m.outougane\\\\Documents\\\\Projects\\\\Perso\\\\personal-docs\\\\src\\\\theme\\\\BlogListPage\")",
-      "Bash(npx docusaurus:*)"
+      "Bash(npx docusaurus:*)",
+      "Bash(xargs grep:*)"
     ]
   }
 }

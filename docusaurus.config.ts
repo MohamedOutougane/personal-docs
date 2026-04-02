@@ -162,16 +162,16 @@ const config: Config = {
           'aria-label': 'GitHub',
         },
         {
-          href: 'https://www.linkedin.com/in/mohamed-outougane-834175224/',
-          position: 'right',
-          className: 'navbar-icon-link navbar-linkedin-link',
-          'aria-label': 'LinkedIn',
-        },
-        {
           href: 'https://www.youtube.com/@Raven_Breach',
           position: 'right',
           className: 'navbar-icon-link navbar-youtube-link',
           'aria-label': 'YouTube',
+        },
+        {
+          href: 'https://www.linkedin.com/in/mohamed-outougane-834175224/',
+          position: 'right',
+          className: 'navbar-icon-link navbar-linkedin-link',
+          'aria-label': 'LinkedIn',
         },
       ],
     },

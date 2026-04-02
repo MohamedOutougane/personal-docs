@@ -73,9 +73,28 @@ html {
 /* ─── Navbar social icon links ─────────────────────────────── */
 .navbar-icon-link {
   padding: 0 0.4rem !important;
-  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Always visible — override Infima's .navbar__item { display: none }
+   on mobile so the social icons stay in the top bar at all sizes. */
+.navbar-icon-link {
+  display: flex !important;
+}
+
+/* ─── Mobile: keep icons + search in a single row ─────────── */
+@media (max-width: 996px) {
+  /* De-absolutize the search container so it flows inline with icons */
+  .navbar__items--right > div:has(> .navbar__search) {
+    position: static !important;
+    padding: 0 !important;
+  }
+
+  /* Tighter icon spacing on small screens */
+  .navbar-icon-link {
+    padding: 0 0.3rem !important;
+  }
 }
 
 .navbar-icon-link::before {
