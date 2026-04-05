@@ -1,0 +1,8 @@
+{
+  "label": "Enumeration",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Enumeration des services : web, SMB, FTP, bases de donnees, et plus."
+  }
+}

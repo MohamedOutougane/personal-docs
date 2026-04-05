@@ -1,0 +1,8 @@
+{
+  "label": "Reconnaissance",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Decouverte d'hotes et scan de ports."
+  }
+}
