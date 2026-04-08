@@ -17,6 +17,7 @@ const config: Config = {
   organizationName: 'MohamedOutougane',
   projectName: 'personal-docs',
 
+  trailingSlash: false,
   onBrokenLinks: 'warn',
 
   markdown: {
