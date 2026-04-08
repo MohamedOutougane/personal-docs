@@ -13,7 +13,7 @@ image: ./featured.gif
 Bienvenue sur **Ignition**, une machine du **Tier 1** de **Starting Point** qui nous rappelle qu'un panneau d'administration exposé avec des identifiants faibles peut suffire à compromettre un système entier. Pas d'exploitation complexe — de la reconnaissance méthodique, **Gobuster**, et la bonne vieille recherche de **mots de passe communs**.
 
 :::tip
-Attention : Il s'agit d'une machine VIP. Vous aurez besoin d'un abonnement HTB pour pouvoir la lancer.
+Attention : Il s'agit d'une machine VIP. Vous aurez besoin d'un abonnement HTB pour pouvoir la tester.
 :::
 
 :::warning
